@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98E1E876-3EB4-43DB-A5EC-11423BBC4D58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RocrailLib_v4</RootNamespace>
+    <AssemblyName>RocrailLib_v4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Definitions\Tools.cs" />
+    <Compile Include="Definitions\PlanElements.cs" />
+    <Compile Include="Elements\Objects\ac.cs" />
+    <Compile Include="Elements\Objects\acc.cs" />
+    <Compile Include="Elements\Objects\accessoryctrl.cs" />
+    <Compile Include="Elements\Objects\actioncond.cs" />
+    <Compile Include="Elements\Objects\actionctrl.cs" />
+    <Compile Include="Elements\Objects\adip.cs" />
+    <Compile Include="Elements\Objects\anaopt.cs" />
+    <Compile Include="Elements\Objects\auto.cs" />
+    <Compile Include="Elements\Objects\bbt.cs" />
+    <Compile Include="Elements\Objects\bidib.cs" />
+    <Compile Include="Elements\Objects\bidibnode.cs" />
+    <Compile Include="Elements\Objects\bincmd.cs" />
+    <Compile Include="Elements\Objects\bk.cs" />
+    <Compile Include="Elements\Objects\booster.cs" />
+    <Compile Include="Elements\Objects\boosterevent.cs" />
+    <Compile Include="Elements\Objects\car.cs" />
+    <Compile Include="Elements\Objects\cbnode.cs" />
+    <Compile Include="Elements\Objects\cbnodeevent.cs" />
+    <Compile Include="Elements\Objects\cbnodevar.cs" />
+    <Compile Include="Elements\Objects\cbus.cs" />
+    <Compile Include="Elements\Objects\channelsetup.cs" />
+    <Compile Include="Elements\Objects\clock.cs" />
+    <Compile Include="Elements\Objects\Cmdline.cs" />
+    <Compile Include="Elements\Objects\co.cs" />
+    <Compile Include="Elements\Objects\command.cs" />
+    <Compile Include="Elements\Objects\ConCmd.cs" />
+    <Compile Include="Elements\Objects\connection.cs" />
+    <Compile Include="Elements\CRocrailElements.cs" />
+    <Compile Include="Elements\Objects\ctrl.cs" />
+    <Compile Include="Elements\Objects\custom.cs" />
+    <Compile Include="Elements\Objects\cvbyte.cs" />
+    <Compile Include="Elements\Objects\datareq.cs" />
+    <Compile Include="Elements\Objects\dcc232.cs" />
+    <Compile Include="Elements\Objects\ddx.cs" />
+    <Compile Include="Elements\Objects\dec.cs" />
+    <Compile Include="Elements\Objects\decoder.cs" />
+    <Compile Include="Elements\Objects\decoderconfig.cs" />
+    <Compile Include="Elements\Objects\description.cs" />
+    <Compile Include="Elements\Objects\devices.cs" />
+    <Compile Include="Elements\Objects\digint.cs" />
+    <Compile Include="Elements\Objects\dipgroup.cs" />
+    <Compile Include="Elements\Objects\dipvalue.cs" />
+    <Compile Include="Elements\Objects\exception.cs" />
+    <Compile Include="Elements\Objects\excl.cs" />
+    <Compile Include="Elements\Objects\ext.cs" />
+    <Compile Include="Elements\Objects\family.cs" />
+    <Compile Include="Elements\Objects\fb.cs" />
+    <Compile Include="Elements\Objects\fbevent.cs" />
+    <Compile Include="Elements\Objects\fbinfo.cs" />
+    <Compile Include="Elements\Objects\fbmods.cs" />
+    <Compile Include="Elements\Objects\fn.cs" />
+    <Compile Include="Elements\Objects\fundef.cs" />
+    <Compile Include="Elements\Objects\Global.cs" />
+    <Compile Include="Elements\Objects\hsi88.cs" />
+    <Compile Include="Elements\Objects\http.cs" />
+    <Compile Include="Elements\Objects\incl.cs" />
+    <Compile Include="Elements\Objects\issue.cs" />
+    <Compile Include="Elements\Objects\item.cs" />
+    <Compile Include="Elements\Objects\jsevent.cs" />
+    <Compile Include="Elements\Objects\jsmap.cs" />
+    <Compile Include="Elements\Objects\lc.cs" />
+    <Compile Include="Elements\Objects\link.cs" />
+    <Compile Include="Elements\Objects\linkcond.cs" />
+    <Compile Include="Elements\Objects\location.cs" />
+    <Compile Include="Elements\Objects\loconet.cs" />
+    <Compile Include="Elements\Objects\log.cs" />
+    <Compile Include="Elements\Objects\logentry.cs" />
+    <Compile Include="Elements\Objects\macro.cs" />
+    <Compile Include="Elements\Objects\macroline.cs" />
+    <Compile Include="Elements\Objects\mcs2.cs" />
+    <Compile Include="Elements\Objects\model.cs" />
+    <Compile Include="Elements\Objects\modocc.cs" />
+    <Compile Include="Elements\Objects\modplan.cs" />
+    <Compile Include="Elements\Objects\module.cs" />
+    <Compile Include="Elements\Objects\mv.cs" />
+    <Compile Include="Elements\Objects\netreq.cs" />
+    <Compile Include="Elements\Objects\netrsp.cs" />
+    <Compile Include="Elements\Objects\occ.cs" />
+    <Compile Include="Elements\Objects\opendcc.cs" />
+    <Compile Include="Elements\Objects\operator.cs" />
+    <Compile Include="Elements\Objects\options.cs" />
+    <Compile Include="Elements\Objects\plan.cs" />
+    <Compile Include="Elements\Objects\portsetup.cs" />
+    <Compile Include="Elements\Objects\powercmd.cs" />
+    <Compile Include="Elements\Objects\powerevent.cs" />
+    <Compile Include="Elements\Objects\product.cs" />
+    <Compile Include="Elements\Objects\productlist.cs" />
+    <Compile Include="Elements\Objects\program.cs" />
+    <Compile Include="Elements\Objects\r2rnet.cs" />
+    <Compile Include="Elements\Objects\response.cs" />
+    <Compile Include="Elements\Objects\rocnet.cs" />
+    <Compile Include="Elements\Objects\rocnetnode.cs" />
+    <Compile Include="Elements\Objects\rocnetnodeoptions.cs" />
+    <Compile Include="Elements\Objects\rocrail.cs" />
+    <Compile Include="Elements\Objects\sb.cs" />
+    <Compile Include="Elements\Objects\sc.cs" />
+    <Compile Include="Elements\Objects\scentry.cs" />
+    <Compile Include="Elements\Objects\section.cs" />
+    <Compile Include="Elements\Objects\seltab.cs" />
+    <Compile Include="Elements\Objects\seltablist.cs" />
+    <Compile Include="Elements\Objects\seltabpos.cs" />
+    <Compile Include="Elements\Objects\service.cs" />
+    <Compile Include="Elements\Objects\sg.cs" />
+    <Compile Include="Elements\Objects\sglist.cs" />
+    <Compile Include="Elements\Objects\slotserver.cs" />
+    <Compile Include="Elements\Objects\SnmpService.cs" />
+    <Compile Include="Elements\Objects\srcp.cs" />
+    <Compile Include="Elements\Objects\srcpbus.cs" />
+    <Compile Include="Elements\Objects\srcpcon.cs" />
+    <Compile Include="Elements\Objects\st.cs" />
+    <Compile Include="Elements\Objects\state.cs" />
+    <Compile Include="Elements\Objects\stcondition.cs" />
+    <Compile Include="Elements\Objects\stlist.cs" />
+    <Compile Include="Elements\Objects\sw.cs" />
+    <Compile Include="Elements\Objects\swcmd.cs" />
+    <Compile Include="Elements\Objects\sys.cs" />
+    <Compile Include="Elements\Objects\system.cs" />
+    <Compile Include="Elements\Objects\tcp.cs" />
+    <Compile Include="Elements\Objects\tk.cs" />
+    <Compile Include="Elements\Objects\tour.cs" />
+    <Compile Include="Elements\Objects\trace.cs" />
+    <Compile Include="Elements\Objects\track.cs" />
+    <Compile Include="Elements\Objects\traverser.cs" />
+    <Compile Include="Elements\Objects\tt.cs" />
+    <Compile Include="Elements\Objects\tx.cs" />
+    <Compile Include="Elements\Objects\variable.cs" />
+    <Compile Include="Elements\Objects\variables.cs" />
+    <Compile Include="Elements\Objects\waybill.cs" />
+    <Compile Include="Elements\Objects\webcam.cs" />
+    <Compile Include="Elements\Objects\webclient.cs" />
+    <Compile Include="Elements\Objects\zlevel.cs" />
+    <Compile Include="EventArgs\TrameEventArgs.cs" />
+    <Compile Include="EventArgs\ElementEventArgs.cs" />
+    <Compile Include="Com\CRocrailClient.cs" />
+    <Compile Include="Rocrail\CRocrail.cs" />
+    <Compile Include="Com\CRocrailSocket.cs" />
+    <Compile Include="Rocrail\CRocrail.Plan.cs" />
+    <Compile Include="Xml\CRocrailHeader.cs" />
+    <Compile Include="Xml\CRocrailXmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xml\XmlIndexes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Rocrail\CRocrail.Events.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalDefinitions\GlobalDefinitions.csproj">
+      <Project>{d68d3f16-5eec-4506-9e4e-a03dcd8f09b8}</Project>
+      <Name>GlobalDefinitions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
